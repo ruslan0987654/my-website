@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: black;
+    height: 200vh;
+    
+}
+main{
+    display: flex;
+}
+section {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+
+.spider .image{
+    background-image: url(spider.webp);
+    background-size: cover;
+    height: calc(100vh - 50px);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   
+}
+.spider .image .content{
+    display: flex;
+    height:86vh;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;    
+}
+.spider .image .content .btns{
+    display: flex;
+    margin-right: 10rem;
+    gap: 15px;
+}
+button{
+padding: 0.3rem 0.88rem;
+border-radius: 3rem;
+border: 0.5px solid #fff;
+background-color: rgba(0, 0, 0, 0.6);
+color: white;
+cursor: pointer;
+}
+button:hover{
+    transform: scaleY(1.2);
+    color: black;
+    background-color: white;
+}
+button i {
+  padding-right: 0.5rem;  
+  font-size: 1.2rem;
+  
+}
+button span{
+    font-size: 1.2rem;
+
+}
+
+
+
+
+
+header{
+    background-color: black;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+aside{
+    top: 40px;
+    position: fixed;
+    background-color: black;
+    width: 50px;
+    height: calc(100vh - 40px);
+    z-index: 1;
+}
+.nvb{
+    
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+}
+
+.nvb2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     gap: 18px;
+     
+   
+}
+.nvb2 i{
+    margin-top: 1rem;
+  color: white; 
+   font-size: 1.4rem;
+}
+.nvb ul {
+    display: flex;
+}
+.nvb ul li{
+    list-style: none;
+}
+.nvb ul li a{
+    padding-left: 2rem;
+    color: white;
+    text-decoration: none;
+    
+
+}
+.nvb ul li .active{
+    font-weight: bold;
+}
+.nvb ul li a:hover{
+    font-weight: bold;
+}
+.nvb h1{
+    color: brown;
+    font-size: 30px;
+}
+ .hesab-span{
+    color: white;
+}
+select{
+    margin-top: -5rem;
+    
+    padding: 0.4rem 0.88rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    border: 0.5px solid white;
+
+}
+.films{
+    color: #fff;
+}
+.film img{
+    width: 230px;
+    height: 150px;
+    background-size: cover;
+}
+
+
+    
+.hesab{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.hesab i{
+    color: white;
+}
+.hesab img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-size: cover;
+}
+.image-d .title{
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    padding: 0.1rem 0.5rem;
+    top: 10px;
+    left: 20px;
+    opacity: 0;
+    font-size: 1.2rem;
+    
+}
+.image-d {
+    position: relative;
+   
+} 
+.items .i-edit{
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    gap: 20px;
+    background-color:rgba(0,0,0,0.7);
+   
+    border-radius: 2rem;
+    padding: 0.4rem 0.5rem; 
+    opacity: 0;
+}
+.items .i-edit i:hover{
+   cursor: pointer;
+   
+}
+
+.image-d:hover .i-edit{
+    opacity: 1;
+}
+
+
+
+.items{
+    display: flex;
+}
+.items .i-edit i{
+  margin-left: 7px;
+  margin-right: 7px;
+  font-size: 0.9rem;
+  
+}
+
+.image-d:hover   {
+    transform: scale(1.3);
+    transition: 0.6s ease;
+    margin:0 20px ;
+   
+}
+.image-d:hover .title ,
+.image-d:hover .i-edit{
+    opacity: 1;
+}
+
+.films .filmesas{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-top: 20px;
+
+}
+.films h1{
+    margin-top: 17px;
+    font-size: 2rem;
+}
